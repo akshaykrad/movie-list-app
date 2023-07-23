@@ -58,13 +58,16 @@ function expand(e){
 		document.getElementById('pb-title').innerHTML = `${data.Title}`;
 		document.getElementById('save-reviews').name = `${data.imdbID}`;
 		document.getElementById('pb-name').innerHTML= `${data.Title}`;
+		document.getElementById('rating').value = "";
+		document.getElementById('comment-box').value ="";
 
-		// for(let i=0;i<movies.length;i++){
-		// 	if(movies[imdb] == data.imdbID){
-		// 		document.getElementById('rating').value = movies[ratings];
-		// 		document.getElementById('comment-box').value = movies[comments];
-		// 	}
-		// }
+		for(let i=0;i<movies.length;i++){
+			if(data.imdbID == movies[i].imdb){
+				// console.log('it exists');
+				document.getElementById('rating').value = movies[i].ratings;
+				document.getElementById('comment-box').value = movies[i].comments;
+			}
+		}
 		
 		let type      = document.getElementById('pb-type');
 		let plot      = document.getElementById('pb-plot');

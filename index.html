@@ -21,7 +21,8 @@
 		
     </div>
 	<div class="pop-up-box">
-		<div class="card">
+		<button class = "cancel cancel1" style="height: 30px;width: 60px;" onclick="closePopUp()">Close</button>
+		<div class="pop-up-card card">
 			<!-- <div ></div> -->
 			<img id="pb-poster" class="poster">
 			<div id="pb-title" class="title"></div>
@@ -43,10 +44,9 @@
 			</select><br>
 			<label for="comments"><span>Comments:</span></label><br>
 			<textarea name="comments" id="comment-box" cols="30" rows="10"></textarea><br>
-			<input id="save-reviews" type="submit" value="Save" onclick="save(event)">
-			
+			<input id="save-reviews" class="save" type="submit" value="Save" onclick="save(event)">
 		</div>
-		<button style="height: 30px;width: 60px;" onclick="closePopUp()">Close</button>
+		<button class = "cancel cancel2" style="height: 30px;width: 60px;" onclick="closePopUp()">Close</button>
 	</div>
 	<script src="./index.js"></script>
 </body>
