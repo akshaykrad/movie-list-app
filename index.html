@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+		<h1>Movie List <span>App</span></h1>
+		<form class="searchForm">
+			<input type="text" class="search-box" placeholder="Search Movie"><br>
+			<input type="submit" class="search-button" value="Search" >
+		</form>
+		<div class="card-container">
+		</div>
+		<div class="pages-box">
+			<span>Pages</span>
+		</div>
+		
+    </div>
+	<div class="pop-up-box">
+		<div class="card">
+			<!-- <div ></div> -->
+			<img id="pb-poster" class="poster">
+			<div id="pb-title" class="title"></div>
+		</div>
+		<div class="details-box">
+			<h1 id="pb-name">Movie name</h1>
+			<div id="pb-type"><span>Type:</span></div>
+			<div id="pb-plot"><span>Plot:</span></div>
+			<div id="pb-genre"><span>Genre:</span></div>
+			<div id="pb-release"><span>Released:</span></div>
+			<div id="pb-imdb"><span>IMDb Rating:</span></div>
+			<label for="rating"><span>Rating:</span></label>
+			<select name="rating" id="rating">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select><br>
+			<label for="comments"><span>Comments:</span></label><br>
+			<textarea name="comments" id="comment-box" cols="30" rows="10"></textarea><br>
+			<input id="save-reviews" type="submit" value="Save" onclick="save(event)">
+			
+		</div>
+		<button style="height: 30px;width: 60px;" onclick="closePopUp()">Close</button>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>

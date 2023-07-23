@@ -1,0 +1,136 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000000;
+	color: #ffc119;;
+}
+.container {
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.hide{
+	opacity: 0.1;
+}
+.container h1{
+	font-size: 44px;
+}
+.container span{
+	color: #00a651;
+}
+.searchForm{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.search-box {
+	width: 100%;
+	/* max-width: 500px; */
+	padding: 10px;
+	border: 0.8px solid #8e8e8e;
+	margin: 20px auto;
+	box-sizing: border-box;
+	background: #101010;
+	color: #ffc119;
+	outline: none;
+}
+.search-button {
+	width: 20%;
+	padding: 10px 20px;
+	background-color: #ffc119;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	background-image: ;
+}
+.card-container{
+	background: #282828;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 16px;
+	margin: 20px 0;
+	border: 0.6px white solid;
+}
+.card{
+	width: 300px;
+	height: 510px;
+	margin: 16px;
+	border-radius: 8px;
+	border: #00a651 0.6px solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.poster{
+	height: 452px;
+	width: 300px;
+	border-radius: 8px 8px 0 0;
+	background-size: 100% 100%;
+	background-position: center;
+	object-fit: cover;
+}
+.title{
+	height: 11.37%;
+	max-width: 100%;
+	border-radius: 0 0 8px 8px ;
+	font-size: 24px;
+	word-wrap: break-word;
+	overflow-y: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pages-box{
+	background: #ffc119;
+	height: 40px;
+	display: none;
+	align-items: center;
+	justify-content: start;
+	padding: 0 5px;
+	overflow:auto;
+}
+.pages-box span{
+	color: #000000;
+	margin: 0 5px;
+}
+.pages-box-btn{
+	background: #ffc119;
+	font-size: 16px;
+	width: 30px;
+	min-width: 30px;
+	height: 30px;
+	margin: 0 2px;
+	border: none;
+	
+}
+.pages-box-btn:hover{
+	background: #00a651;
+	color: white;
+}
+.btn-clicked{
+	background: #00a651;
+	color: white;
+}
+.pop-up-box{
+	position: fixed;
+	top: 70px;
+	left: 130px;
+	height: 550px;
+	width: 80%;
+	border: 0.8px solid #8e8e8e;
+	padding: 10px;
+	display: none;
+	opacity: 5 ;
+}
+.details-box{
+	flex-grow:10;
+	align-items: start !important;
+}
+.pop-up-box span{
+	color: #00a651;
+}
